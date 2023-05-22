@@ -11,7 +11,7 @@ import SwiftUI
 struct RenoTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RenovationProjectsView()
         }
     }
 }

@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		6D6E00B72A1B52F100DF521D /* RenoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00B62A1B52F100DF521D /* RenoTrackerApp.swift */; };
-		6D6E00B92A1B52F100DF521D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00B82A1B52F100DF521D /* ContentView.swift */; };
 		6D6E00BB2A1B52F200DF521D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E00BA2A1B52F200DF521D /* Assets.xcassets */; };
 		6D6E00BE2A1B52F200DF521D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E00BD2A1B52F200DF521D /* Preview Assets.xcassets */; };
+		6D6E00C72A1B53A300DF521D /* RenovationProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00C62A1B53A300DF521D /* RenovationProjectsView.swift */; };
+		6D6E00C92A1B53C400DF521D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00C82A1B53C400DF521D /* DetailView.swift */; };
+		6D6E00CB2A1B53D600DF521D /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00CA2A1B53D600DF521D /* EditView.swift */; };
+		6D6E00CD2A1B53EC00DF521D /* InspectionLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00CC2A1B53EC00DF521D /* InspectionLogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D6E00B32A1B52F100DF521D /* RenoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6E00B62A1B52F100DF521D /* RenoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenoTrackerApp.swift; sourceTree = "<group>"; };
-		6D6E00B82A1B52F100DF521D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D6E00BA2A1B52F200DF521D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D6E00BD2A1B52F200DF521D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D6E00C62A1B53A300DF521D /* RenovationProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectsView.swift; sourceTree = "<group>"; };
+		6D6E00C82A1B53C400DF521D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6D6E00CA2A1B53D600DF521D /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		6D6E00CC2A1B53EC00DF521D /* InspectionLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,8 @@
 		6D6E00B52A1B52F100DF521D /* RenoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6D6E00C42A1B534700DF521D /* Views */,
 				6D6E00B62A1B52F100DF521D /* RenoTrackerApp.swift */,
-				6D6E00B82A1B52F100DF521D /* ContentView.swift */,
 				6D6E00BA2A1B52F200DF521D /* Assets.xcassets */,
 				6D6E00BC2A1B52F200DF521D /* Preview Content */,
 			);
@@ -65,6 +71,25 @@
 				6D6E00BD2A1B52F200DF521D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D6E00C42A1B534700DF521D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E00C52A1B536700DF521D /* Reno */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D6E00C52A1B536700DF521D /* Reno */ = {
+			isa = PBXGroup;
+			children = (
+				6D6E00C62A1B53A300DF521D /* RenovationProjectsView.swift */,
+				6D6E00C82A1B53C400DF521D /* DetailView.swift */,
+				6D6E00CA2A1B53D600DF521D /* EditView.swift */,
+				6D6E00CC2A1B53EC00DF521D /* InspectionLogView.swift */,
+			);
+			path = Reno;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6E00B92A1B52F100DF521D /* ContentView.swift in Sources */,
 				6D6E00B72A1B52F100DF521D /* RenoTrackerApp.swift in Sources */,
+				6D6E00C92A1B53C400DF521D /* DetailView.swift in Sources */,
+				6D6E00CD2A1B53EC00DF521D /* InspectionLogView.swift in Sources */,
+				6D6E00CB2A1B53D600DF521D /* EditView.swift in Sources */,
+				6D6E00C72A1B53A300DF521D /* RenovationProjectsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
