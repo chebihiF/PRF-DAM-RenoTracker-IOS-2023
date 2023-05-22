@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  RenoTracker
 //
-//  Created by CHEBIHI FAYCAL on 22/5/2023.
+//  Created by  FAYCAL on 22/5/2023.
 //
 
 import SwiftUI
@@ -17,15 +17,27 @@ struct DetailView: View {
             Divider()
             Budget()
             Spacer()
-        }.padding(.all)
+        }
+        .padding(.all)
+        .navigationTitle("Front Lobby")
+        .sheet(isPresented: .constant(true), content:{
+          EditView()
+        })
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            DetailView()
-            DetailView().preferredColorScheme(.dark)
+            NavigationView
+            {
+                DetailView()
+            }
+            NavigationView
+            {
+                DetailView().preferredColorScheme(.dark)
+            }
+                
         }
     }
 }
@@ -34,8 +46,6 @@ struct DetailView_Previews: PreviewProvider {
 struct Header: View {
     var body: some View {
         VStack{
-            Text("Front Lobby")
-                .font(.largeTitle)
             Image("front-lobby")
                 .resizable()
                 .scaledToFit()
