@@ -8,12 +8,14 @@
 import Foundation
 
 protocol RenovationAPIServiceProtocol {
-    func fetchRenovationProjetcs(completion: ([RenovationProject]) -> Void)
+    func fetchRenovationProjetcs(completion: ([RenovationProject]) -> Void) // TODO: get data from json file
+    func fetchRenovationProjectTest(completion: (RenovationProject) -> Void ) // TODO: get data from json file
 }
 
 final class RenovationAPIService : RenovationAPIServiceProtocol {
     
     func fetchRenovationProjetcs(completion: ([RenovationProject]) -> Void) {
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
@@ -54,6 +56,33 @@ final class RenovationAPIService : RenovationAPIServiceProtocol {
         ]
         
         completion(.init(renovationProjects))
+    }
+    
+    func fetchRenovationProjectTest(completion: (RenovationProject) -> Void ){
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let renovationProjectTest: RenovationProject = RenovationProject(projectNumber: 2021001,
+                                                      renovationArea: "Front Lobby",
+                                                      imageName: "front-lobby",
+                                                      dueDate: dateFormatter.date(from: "2021-08-01")!,
+                                                      lastProgressUpdate: dateFormatter.date(from: "2021-05-28")!,
+                                                      workQuality: .good,
+                                                      isFlagged: false,
+                                                      punchList: [
+                                                        PunchListItem(task: "Remodel front desk", status: .complete),
+                                                        PunchListItem(task: "Retile entry", status: .complete),
+                                                        PunchListItem(task: "Replace light fixtures", status: .complete),
+                                                        PunchListItem(task: "Paint walls", status: .inProgress),
+                                                        PunchListItem(task: "Hang new artwork", status: .notStarted)
+                                                      ],
+                                                      budgetAmountAllocated: 15000,
+                                                      budgetSpentToDate: 18350.0,
+                                                      inspectionLog: [
+                                                        InspectionLogEntry(entryDate: Date().advanced(by: -1), details: "Test entry 1"), InspectionLogEntry(entryDate: Date(), details: "Test entry 2")])
+        
+        completion(renovationProjectTest)
     }
 }
 

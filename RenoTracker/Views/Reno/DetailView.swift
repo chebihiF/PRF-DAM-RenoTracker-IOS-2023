@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    @ObservedObject private var viewModel = RenovationProjectViewModel()
+    
     var body: some View {
         VStack(alignment: .leading){
             Header()
@@ -20,9 +23,10 @@ struct DetailView: View {
         }
         .padding(.all)
         .navigationTitle("Front Lobby")
-        .sheet(isPresented: .constant(true), content:{
+        .sheet(isPresented: .constant(false), content:{
           EditView()
         })
+       
     }
 }
 
@@ -124,6 +128,8 @@ struct PunchList: View {
 
 // MARK: Budget section
 struct Budget: View {
+    @ObservedObject private var viewModel = RenovationProjectViewModel()
+   
     var body: some View {
         VStack(alignment: .leading){
             Text("Budget")
@@ -138,7 +144,7 @@ struct Budget: View {
             HStack{
                 Text("Amount Allocated : ")
                 Spacer()
-                Text("$15,000")
+                Text("\(viewModel.renovationProjectTest.budgetAmountAllocated)")
             }
             
             HStack{
@@ -152,6 +158,8 @@ struct Budget: View {
                 Spacer()
                 Text("$6,650").bold()
             }
+        }.onAppear{
+            viewModel.onAppear()
         }
     }
 }
