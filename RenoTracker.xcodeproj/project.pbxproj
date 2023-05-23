@@ -18,6 +18,8 @@
 		6D6E00D52A1B74E900DF521D /* RenovationAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00D42A1B74E900DF521D /* RenovationAPIService.swift */; };
 		6D6E00D72A1B781300DF521D /* RenovationProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00D62A1B781300DF521D /* RenovationProjectRepository.swift */; };
 		6D6E00DA2A1B79F000DF521D /* RenovationProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6E00D92A1B79F000DF521D /* RenovationProjectViewModel.swift */; };
+		6D7F1D962A1CA94B005D1222 /* RenovationProject + SwiftUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F1D952A1CA94B005D1222 /* RenovationProject + SwiftUi.swift */; };
+		6D7F1D982A1CAEBC005D1222 /* PunchListItem + SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F1D972A1CAEBC005D1222 /* PunchListItem + SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		6D6E00D42A1B74E900DF521D /* RenovationAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationAPIService.swift; sourceTree = "<group>"; };
 		6D6E00D62A1B781300DF521D /* RenovationProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectRepository.swift; sourceTree = "<group>"; };
 		6D6E00D92A1B79F000DF521D /* RenovationProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenovationProjectViewModel.swift; sourceTree = "<group>"; };
+		6D7F1D952A1CA94B005D1222 /* RenovationProject + SwiftUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RenovationProject + SwiftUi.swift"; sourceTree = "<group>"; };
+		6D7F1D972A1CAEBC005D1222 /* PunchListItem + SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PunchListItem + SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				6D6E00D12A1B726C00DF521D /* RenovationProject.swift */,
+				6D7F1D952A1CA94B005D1222 /* RenovationProject + SwiftUi.swift */,
+				6D7F1D972A1CAEBC005D1222 /* PunchListItem + SwiftUI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 			files = (
 				6D6E00DA2A1B79F000DF521D /* RenovationProjectViewModel.swift in Sources */,
 				6D6E00D72A1B781300DF521D /* RenovationProjectRepository.swift in Sources */,
+				6D7F1D982A1CAEBC005D1222 /* PunchListItem + SwiftUI.swift in Sources */,
 				6D6E00B72A1B52F100DF521D /* RenoTrackerApp.swift in Sources */,
 				6D6E00C92A1B53C400DF521D /* DetailView.swift in Sources */,
 				6D6E00D22A1B726C00DF521D /* RenovationProject.swift in Sources */,
 				6D6E00CD2A1B53EC00DF521D /* InspectionLogView.swift in Sources */,
+				6D7F1D962A1CA94B005D1222 /* RenovationProject + SwiftUi.swift in Sources */,
 				6D6E00CB2A1B53D600DF521D /* EditView.swift in Sources */,
 				6D6E00D52A1B74E900DF521D /* RenovationAPIService.swift in Sources */,
 				6D6E00C72A1B53A300DF521D /* RenovationProjectsView.swift in Sources */,

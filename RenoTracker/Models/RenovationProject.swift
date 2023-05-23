@@ -27,6 +27,8 @@ struct RenovationProject {
         case good = "Good"
         case excellent = "Excellent"
     }
+    
+    
 }
 
 struct PunchListItem {
@@ -43,4 +45,9 @@ struct PunchListItem {
 struct InspectionLogEntry {
     var entryDate: Date
     var details: String
+}
+
+enum BudgetStatus: String {
+    case onBudget = "On Budget"
+    case overBudget = "Over Budget"
 }

@@ -69,7 +69,7 @@ final class RenovationAPIService : RenovationAPIServiceProtocol {
                                                       dueDate: dateFormatter.date(from: "2021-08-01")!,
                                                       lastProgressUpdate: dateFormatter.date(from: "2021-05-28")!,
                                                       workQuality: .good,
-                                                      isFlagged: false,
+                                                      isFlagged: true,
                                                       punchList: [
                                                         PunchListItem(task: "Remodel front desk", status: .complete),
                                                         PunchListItem(task: "Retile entry", status: .complete),
